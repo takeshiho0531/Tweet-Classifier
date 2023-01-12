@@ -11,7 +11,7 @@ RUN wget https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh && 
 ENV PATH /opt/anaconda3/bin:$PATH
 
 RUN pip install --upgrade pip && pip install
-	torch==1.8.1 \
+	pytorch==1.8.1 \
 	torchvision==0.9.1 \
 	transformers[ja] \
 	unidic-lite
