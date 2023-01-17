@@ -1,0 +1,42 @@
+body{
+       /* 背景色指定 */
+   background-color:#b0c4de;
+}
+
+.txt-hide{
+display: none;
+}
+
+.more {
+width: 120px;
+margin: 100px auto;
+display: block;
+background-color: #666;
+color: #fff;
+padding:10px 15px;
+border: none;
+outline: 0;
+transition: .5s;
+-erbkit-transition: .5s;
+}
+ 
+.more::after {
+content: "詳しく見る";
+transition: .2s;
+-erbkit-transition: .2s;
+}
+
+.more.on-click::after{
+content: "閉じる";
+}
+
+.return {
+width: 120px;
+margin: 100px auto;
+display: block;
+background-color: #666;
+color: #fff;
+padding:10px 15px;
+border: none;
+outline: 0;
+}

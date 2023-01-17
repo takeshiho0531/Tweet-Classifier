@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Buzz.css') }}">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/js.js') }}"></script>
+  <style>
+    .center{
+      text-align: center;
+    }
+  </style>
+  
+
+  <title>Buzz!!!</title>
+
+</head>
+
+<body>
+
+  <div class="txt-show">
+
+    <div class="center">
+      <p><img src="../static/images/Buzz.GIF" alt="Buzz" title="Buzz" width="480" height="360"> </p>
+    </div>
+
+    <div class="center">
+      <h1 style="color: palevioletred;">！！このツイートはバズる可能性があります！！<br></h1>
+    </div>
+
+    <div class="center">
+      <h2 style="color:plum;">❤️早速投稿して世界中からたくさんの愛を受け取りましょう❤️</h2>
+    </div>
+
+    <form action="/nextpage" method="get">
+      <button class="return">戻る</button>
+    </form>
+
+  </div>
+
+  <div class="txt-hide">
+
+    <div class="center">
+      <h2 style="color:#plum;">詳しい評価</h2>
+      <p>ここにあなたのツイートの何がバズに繋がったかのヒントをお示しします。</p>
+      <p>(赤色が濃い部分がヒントです)</p>
+    </div>
+    <br>
+
+    <div class="center">
+      {{html_output}}
+    </div>
+  </div>
+
+  <button class="more"></button><br>
+
+</body>
+</html>

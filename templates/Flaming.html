@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Flaming.css') }}">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/js.js') }}"></script>
+  <style>
+    .center{
+      text-align: center;
+    }
+  </style>
+  
+
+  <title>炎上!!!</title>
+
+</head>
+<body>
+
+  <div class="txt-show">
+
+    <div class="center">
+      <p><img src="../static/images/Flaming.GIF" alt="誕生日ケーキ" width="480" height="360"></p>
+    </div>
+
+    <div class="center">
+      <h1 style="color: red;">このツイートは炎上する恐れがあります。<br></h1>
+    </div>
+
+    <div class="center">
+      <h2 style="color:red;">本日のワタクシの夕飯は鶏の丸焼きといったところでしょうか...ｲｯﾋｯﾋ...</h2>
+    </div>
+
+    <form action="/nextpage" method="get">
+      <button class="return">戻る</button>
+    </form>
+
+  </div>
+
+  <div class="txt-hide">
+
+    <div class="center">
+      <h2 style="color:red;">詳しい評価</h2>
+      <p>ここにあなたのツイートの何が炎上に繋がったかのヒントをお示しします。</p>
+      <p>反省して健全なツイッター運営を心がけましょう。</p>
+      <p>(赤色が濃い部分がヒントです)</p>
+    </div>
+    <br>
+
+    <div class="center">
+      {{html_output}}
+    </div>
+  </div>
+
+  <button class="more"></button><br>
+  
+
+</body>
+</html>

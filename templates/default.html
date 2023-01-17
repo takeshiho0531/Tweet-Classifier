@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/js.js') }}"></script>
+  <style>
+    .center{
+      text-align: center;
+    }
+  </style>
+  <title>default画面</title>
+</head>
+<body>
+
+<h1 style="color: #00bfff;">TweetClassifierへようこそ。<br></h1>
+<br>
+<br>
+<br>
+
+<p>
+このアプリはあなたが適切なツイッター運営をすることのお手伝いを致します <br>
+今まさにツイートしようとしていますか？ <br>
+少しお待ちください <br>
+以下のテキストボックスにその内容を入力して、その下のボタンを押してください <br>
+ワタクシがそのツイートがどのような影響を及ぼすのか判定して差し上げます <br>
+</p>
+
+  <form method="POST" action={{url_for('result')}}>
+    <input class=txt2 type="text" id="your_tweet" name="your_tweet" size="200">
+    <p><input type="submit" value="これで判定する"></p>
+  </form><br>
+
+</body>
+</html>
