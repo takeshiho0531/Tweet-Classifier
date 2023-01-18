@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 import torch
 
 import all
-from all import extract_new_text, tokenizer_512, mk_html_new, remove_str_start_end
+from all import extract_new_text, tokenizer_512, mk_html_new
 from model import BertForTweetClassifier
 
 from IPython.display import HTML
