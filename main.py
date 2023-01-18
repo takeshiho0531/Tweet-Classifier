@@ -42,6 +42,7 @@ def inference(new_text):
     
     html_output=html_output.replace("##","")
     html_output=html_output.replace("[CLS]","")
+    html_output=html_output.replace("[UNK]","")
 
     return preds, html_output
 
