@@ -1,16 +1,7 @@
-import os
-import random
-import numpy as np
-import torch
-import pandas as pd
-from tqdm import tqdm
-import re
+from torch import nn
 from transformers import BertModel
 
-
-model= BertModel.from_pretrained('cl-tohoku/bert-base-japanese-whole-word-masking', output_attentions=True)
-
-from torch import nn
+model = BertModel.from_pretrained('cl-tohoku/bert-base-japanese-whole-word-masking', output_attentions=True)
 
 
 class BertForTweetClassifier(nn.Module):
@@ -20,7 +11,7 @@ class BertForTweetClassifier(nn.Module):
         super(BertForTweetClassifier, self).__init__()
 
         # BERT
-        self.bert = model  
+        self.bert = model
 
         # 3値分類する層を追加
         # 最終層への入力はBERTの出力特徴量の次元768、出力は3クラス
