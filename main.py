@@ -3,6 +3,9 @@ from flask import Flask, render_template, request
 from IPython.display import HTML
 
 from all import extract_new_text, mk_html_new, tokenizer_512
+import all
+from all import extract_new_text, tokenizer_512, mk_html_new
+from model import BertForTweetClassifier
 
 app = Flask(__name__, static_folder="./static")
 
