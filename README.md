@@ -23,7 +23,7 @@ The demonstration video is also available on [youtube](https://www.youtube.com/w
 
 ### ＊プレゼンテーションスライド/Presentation Slide
 
-授業内の成果発表時に用いた[スライド](###)です。
+授業内の成果発表時に用いた[スライド](figures/TwitterClassifier_for_upload.pptx)です。
 
 This [slide](figures/TwitterClassifier_for_upload.pptx) was used during the presentation of the results in class.
 
