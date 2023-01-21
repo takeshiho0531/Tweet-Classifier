@@ -76,6 +76,10 @@ After the screen transition, press the "戻る" button to return to the home scr
 
 The creation of this is summarized on my blog(Japanese). Please take a look at it, I will be delighted.
 
+* [Tweet-Classifierを作ったよ　その1 ~ツイートの収集・分析~](https://takeshiho0531.hatenablog.com/entry/2023/01/22/044119)
+* [Tweet-Classifierを作ったよ　その2~学習・検証~](https://takeshiho0531.hatenablog.com/entry/2023/01/22/065058)
+
+
 ## 参考にしたもの/Reference
 
 
