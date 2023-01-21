@@ -21,7 +21,7 @@ The demonstration video is also available on [youtube](https://www.youtube.com/w
 ![demo](https://myoctocat.com/assets/images/base-octocat.svg)
 
 
-＊プレゼンテーションスライド
+### ＊プレゼンテーションスライド
 
 授業内の成果発表時に用いた[スライド](###)です。
 
