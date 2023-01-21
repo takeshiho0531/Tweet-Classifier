@@ -11,7 +11,7 @@ I made this as my final submission for a free production project in my second ye
 
 The service predicts whether a tweet will be a "buzz", "flame", or other.
 
-### ＊デモ動画
+### ＊デモ動画/Demonstration
 
 デモ動画は[youtube](https://www.youtube.com/watch?v=NEOWWGJ4TqY)にも上がっています。
 
@@ -21,7 +21,7 @@ The demonstration video is also available on [youtube](https://www.youtube.com/w
 ![demo](figures/Original-Service_-Tweet-Classifier.gif)
 
 
-### ＊プレゼンテーションスライド
+### ＊プレゼンテーションスライド/Presentation Slide
 
 授業内の成果発表時に用いた[スライド](###)です。
 
